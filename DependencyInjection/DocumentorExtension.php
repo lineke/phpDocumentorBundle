@@ -10,11 +10,11 @@ use Symfony\Component\Config\FileLocator;
 /**
  * Dependancy Injection
  * 
- * PhpDocumentorBundle's extension class to fetch services
+ * DocumentorBundle's extension class to fetch services
  * 
  * @author Artur Gajewski
  */
-class AgaDocumentorExtension extends Extension
+class DocumentorExtension extends Extension
 {
     /**
      * Service loader
