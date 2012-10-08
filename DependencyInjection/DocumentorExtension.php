@@ -16,6 +16,7 @@ use Symfony\Component\Config\FileLocator;
  */
 class DocumentorExtension extends Extension
 {
+    
     /**
      * Service loader
      * 
