@@ -41,7 +41,7 @@ class DocumentorCommand extends ContainerAwareCommand {
         $output->writeln('Generating project documentation, please wait...');
         
         $source = realpath(__DIR__ . '/../../../');
-        $ignore = realpath(__DIR__ . '/../../../Aga/DocumentorBundle');
+        $ignore = realpath(__DIR__ . '/../../../Aga');
         $target = realpath(__DIR__ . '/../Resources/public');
         
         $command = 'phpdoc -d ' . $source . ' -t ' . $target . ' --ignore ' . $ignore;
