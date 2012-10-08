@@ -41,7 +41,7 @@ How to use DocumentorBundle?
 
 Go to your project root and run the command:
 
-    $ app/console documentor:dump
+    $ app/console documentation:create
 
 This command will go through your src folder and created documentation based on the files within that folder.
 
