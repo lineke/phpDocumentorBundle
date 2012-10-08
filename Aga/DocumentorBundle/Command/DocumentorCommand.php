@@ -8,27 +8,45 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * Command for the console
+ * 
+ * DocumentorBundle's command to generate the project documentation with
+ * phpDocumentor2. 
+ * 
+ * @author Artur Gajewski
+ */
 class DocumentorCommand extends ContainerAwareCommand {
 
+    /**
+     * Set the configuration for the command syntax and description 
+     */
     protected function configure() 
     {
         $this->setName('documentation:create')
             ->setDescription('Create project documentation with phpDocumentor2');
     }
     
+    /**
+     * Execution of the console command
+     * 
+     * This function checks all source code from the src folder, ignores this bundle's
+     * files, and generates documentation HTML with phpDocumentor2.
+     * 
+     * @param InputInterface $input
+     * @param OutputInterface $output 
+     */
     protected function execute(InputInterface $input, OutputInterface $output) 
     {
-        // Set the source and the target folders
-        $source = realpath(__DIR__ . '/../../../');
-        $target = realpath(__DIR__ . '/../Resources/public');
-        
         $output->writeln('Generating project documentation, please wait...');
         
-        // Execute the the phpdoc binary
-        $command = 'phpdoc -d ' . $source . ' -t ' . $target;
+        $source = realpath(__DIR__ . '/../../../');
+        $ignore = realpath(__DIR__ . '/../../../Aga/DocumentorBundle');
+        $target = realpath(__DIR__ . '/../Resources/public');
+        
+        $command = 'phpdoc -d ' . $source . ' -t ' . $target . '--ignore ' . $ignore;
         exec($command);
         
-        // Show further instructions
         $output->writeln("Run the following command to install assets app/console assets:");
         $output->writeln("app/console assets:install --symlink web");
     }
