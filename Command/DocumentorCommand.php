@@ -44,7 +44,7 @@ class DocumentorCommand extends ContainerAwareCommand {
         $ignore = realpath(__DIR__ . '/../../../Aga/DocumentorBundle');
         $target = realpath(__DIR__ . '/../Resources/public');
         
-        $command = 'phpdoc -d ' . $source . ' -t ' . $target . '--ignore ' . $ignore;
+        $command = 'phpdoc -d ' . $source . ' -t ' . $target . ' --ignore ' . $ignore;
         exec($command);
         
         $output->writeln("Run the following command to install assets app/console assets:");
