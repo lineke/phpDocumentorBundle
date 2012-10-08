@@ -42,6 +42,6 @@ class DocumentorExtension extends Extension
      */
     public function getAlias()
     {
-        return 'aga_documentor';
+        return 'documentor';
     }
 }
