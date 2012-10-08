@@ -1,6 +1,6 @@
 <?php
 
-namespace Php\DocumentorBundle\DependencyInjection;
+namespace Aga\PhpDocumentorBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;

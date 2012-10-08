@@ -1,6 +1,6 @@
 <?php
 
-namespace Php\DocumentorBundle\Command;
+namespace Aga\PhpDocumentorBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
