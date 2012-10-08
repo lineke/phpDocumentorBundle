@@ -10,13 +10,14 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class DocumentorCommand extends ContainerAwareCommand {
 
-    protected function configure() {
-        $this->setName('documentor:dump')
+    protected function configure() 
+    {
+        $this->setName('documentation:create')
             ->setDescription('Create project documentation with phpDocumentor2');
     }
     
-    protected function execute(InputInterface $input, OutputInterface $output) {
-        
+    protected function execute(InputInterface $input, OutputInterface $output) 
+    {
         // Set the source and the target folders
         $source = realpath(__DIR__ . '/../../../');
         $target = realpath(__DIR__ . '/../Resources/public');
@@ -30,6 +31,5 @@ class DocumentorCommand extends ContainerAwareCommand {
         // Show further instructions
         $output->writeln("Run the following command to install assets app/console assets:");
         $output->writeln("app/console assets:install --symlink web");
-        
     }
 }
