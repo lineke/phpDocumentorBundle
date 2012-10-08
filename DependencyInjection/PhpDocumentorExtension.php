@@ -1,6 +1,6 @@
 <?php
 
-namespace Aga\DocumentorBundle\DependencyInjection;
+namespace Php\DocumentorBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -10,11 +10,11 @@ use Symfony\Component\Config\FileLocator;
 /**
  * Dependancy Injection
  * 
- * DocumentorBundle's extension class to fetch services
+ * PhpDocumentorBundle's extension class to fetch services
  * 
  * @author Artur Gajewski
  */
-class AgaDocumentorExtension extends Extension
+class PhpDocumentorExtension extends Extension
 {
     /**
      * Service loader
@@ -42,6 +42,6 @@ class AgaDocumentorExtension extends Extension
      */
     public function getAlias()
     {
-        return 'aga_documentor';
+        return 'phpdoc';
     }
 }

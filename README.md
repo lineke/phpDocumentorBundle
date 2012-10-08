@@ -86,3 +86,9 @@ Want to contribute?
 ------------------
 
 If you want to contribute to this project then just forkit, modify it and send a pull request. It's that dead simple!
+
+
+Change log
+----------
+
+2012-10-08: Changed the names of classes from DocumentorBundle to PhpDocumentorBundle

@@ -1,6 +1,6 @@
 <?php
 
-namespace Aga\DocumentorBundle\Command;
+namespace Php\DocumentorBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
@@ -11,12 +11,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Command for the console
  * 
- * DocumentorBundle's command to generate the project documentation with
+ * PhpDocumentorBundle's command to generate the project documentation with
  * phpDocumentor2. 
  * 
  * @author Artur Gajewski
  */
-class DocumentorCommand extends ContainerAwareCommand {
+class PhpDocumentorCommand extends ContainerAwareCommand {
 
     /**
      * Set the configuration for the command syntax and description 
@@ -47,7 +47,7 @@ class DocumentorCommand extends ContainerAwareCommand {
         $command = 'phpdoc -d ' . $source . ' -t ' . $target . ' --ignore ' . $ignore;
         exec($command);
         
-        $output->writeln("Run the following command to install assets app/console assets:");
+        $output->writeln("Run the following command to install assets to the public folder:");
         $output->writeln("app/console assets:install --symlink web");
     }
 }

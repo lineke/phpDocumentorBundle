@@ -1,16 +1,16 @@
 <?php
 
-namespace Aga\DocumentorBundle;
+namespace Php\DocumentorBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * DocumentorBundle
+ * PhpDocumentorBundle
  * 
  * A bundle to generate documentation with phpDocumentor2
  * 
  * @author Artur Gajewski
  */
-class AgaDocumentorBundle extends Bundle
+class PhpDocumentorBundle extends Bundle
 {
 }
