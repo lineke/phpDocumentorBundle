@@ -31,13 +31,27 @@ DocumentorBundle requires the following:
 Installation
 ------------
 
-1. Download the bundle from https://github.com/artur-gajewski/phpDocumentorBundle
+Go to your project directory and add the following line to "require" list in composer.json file:
 
-2. Add the bundle into AppKernel.php file in your Symfony2 project
+```php
+"aga/documentor-bundle": "dev-master"
+```
+
+Now run the Composer:
+
+```php
+php composer.phar install
+```
+
+Finally, add the bundle into AppKernel.php file in your Symfony2 project.
+
+```php
+$bundles[] = new Aga\DocumentorBundle\AgaDocumentorBundle();
+```
 
 
 How to use DocumentorBundle?
--------------------
+----------------------------
 
 Go to your project root and run the command:
 
