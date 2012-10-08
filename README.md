@@ -34,7 +34,7 @@ Installation
 Go to your project directory and add the following line to "require" list in composer.json file:
 
 ```php
-"aga/documentor-bundle": "dev-master"
+"artur-gajewski/documentor-bundle": "dev-master"
 ```
 
 Now run the Composer:
