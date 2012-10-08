@@ -19,8 +19,6 @@
 
     "autoload": {
         "psr-0": { "Aga\\DocumentorBundle": "" }
-    },
-    
-    "target-dir": "Aga/DocumentorBundle"
+    }
 
 }
