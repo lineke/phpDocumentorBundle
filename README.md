@@ -66,3 +66,9 @@ To come in contact is actually dead simple and can be done in a variety of ways.
 * Twitter: [@GajewskiArtur](http://twitter.com/GajewskiArtur)
 * Github: [https://github.com/artur-gajewski](https://github.com/artur-gajewski)
 * E-mail:  [info@arturgajewski.com](mailto:info@arturgajewski.com)
+
+
+Want to contribute?
+------------------
+
+If you want to contribute to this project then just forkit, modify it and send a pull request. It's that dead simple!
