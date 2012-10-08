@@ -42,6 +42,6 @@ class PhpDocumentorExtension extends Extension
      */
     public function getAlias()
     {
-        return 'php_documentor';
+        return 'aga_phpdocumentor';
     }
 }
