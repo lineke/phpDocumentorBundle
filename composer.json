@@ -10,7 +10,7 @@
         {
             "name": "Artur Gajewski",
             "email": "info@arturgajewski.com"
-        },
+        }
     ],
 
     "require": {
@@ -21,5 +21,5 @@
         "psr-0": { "Aga\\DocumentorBundle": "" }
     },
 
-    "target-dir": "Aga/DocumentorBundle",
+    "target-dir": "Aga/DocumentorBundle"
 }
