@@ -1,0 +1,47 @@
+<?php
+
+namespace Aga\DocumentorBundle\DependencyInjection;
+
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\Config\FileLocator;
+
+/**
+ * Dependancy Injection
+ * 
+ * DocumentorBundle's extension class to fetch services
+ * 
+ * @author Artur Gajewski
+ */
+class AgaDocumentorExtension extends Extension
+{
+    /**
+     * Service loader
+     * 
+     * This function loads the configs and the container builder and loads the
+     * given xml file to fetch services from.
+     * 
+     * @param array $configs
+     * @param ContainerBuilder $container 
+     */
+    public function load(array $configs, ContainerBuilder $container)
+    {
+        $processor = new Processor();
+        $configuration = new Configuration();
+        $config = $processor->processConfiguration($configuration, $configs);
+ 
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.xml');
+    }
+
+    /**
+     * Return alias of the bundle
+     * 
+     * @return string 
+     */
+    public function getAlias()
+    {
+        return 'aga_documentor';
+    }
+}
