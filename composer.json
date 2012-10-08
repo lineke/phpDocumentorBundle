@@ -18,9 +18,9 @@
     },
 
     "autoload": {
-        "psr-0": { "Aga\\PhpDocumentorBundle": "" }
+        "psr-0": { "Aga\\DocumentorBundle": "" }
     },
     
-    "target-dir": "Aga/PhpDocumentorBundle"
+    "target-dir": "Aga/DocumentorBundle"
 
 }

@@ -14,7 +14,7 @@ use Symfony\Component\Config\FileLocator;
  * 
  * @author Artur Gajewski
  */
-class AgaPhpDocumentorExtension extends Extension
+class AgaDocumentorExtension extends Extension
 {
     /**
      * Service loader
@@ -42,6 +42,6 @@ class AgaPhpDocumentorExtension extends Extension
      */
     public function getAlias()
     {
-        return 'aga_phpdocumentor';
+        return 'aga_documentor';
     }
 }

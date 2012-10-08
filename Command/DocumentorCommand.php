@@ -1,6 +1,6 @@
 <?php
 
-namespace Aga\PhpDocumentorBundle\Command;
+namespace Aga\DocumentorBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
@@ -16,7 +16,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  * 
  * @author Artur Gajewski
  */
-class PhpDocumentorCommand extends ContainerAwareCommand {
+class DocumentorCommand extends ContainerAwareCommand {
 
     /**
      * Set the configuration for the command syntax and description 
